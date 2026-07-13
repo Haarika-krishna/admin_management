@@ -1,15 +1,14 @@
-import { StrictMode } from 'react'
+import { StrictMode } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import BusinessType from './components/BusinessType.jsx'
-import BusinessInfo from './components/BusinessInfo.jsx'
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { Routes, Route } from "react-router-dom";
+import App from "./App.jsx";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-    <App />
-  </BrowserRouter>
-  </StrictMode>,
-)
+    <BrowserRouter basename="/admin_management">
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+);
