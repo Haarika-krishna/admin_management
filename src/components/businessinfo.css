@@ -70,6 +70,7 @@
 }
 
 .field-error{
+    text-align: left;
     color:#E53935;
     font-size:13px;
     margin-top:6px;
